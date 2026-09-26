@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import GitHubSection from "./components/GitHubSection";
+
 import CreativeBusiness from "./components/CreativeBusiness";
 import Experience from "./components/Experience";
 import CurrentlyBuilding from "./components/CurrentlyBuilding";
@@ -24,7 +24,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
-          <GitHubSection />
+
           <CreativeBusiness />
           <Experience />
           <CurrentlyBuilding />

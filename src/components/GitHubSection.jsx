@@ -14,7 +14,7 @@ export default function GitHubSection() {
       language: "Python",
       stargazers_count: 3,
       forks_count: 0,
-      html_url: "https://github.com/rejhaqtonmoy/cv-annotation-formatter"
+      html_url: "https://github.com/rejawanul/cv-annotation-formatter"
     },
     {
       name: "sports-highlight-automator",
@@ -22,20 +22,20 @@ export default function GitHubSection() {
       language: "Python",
       stargazers_count: 2,
       forks_count: 1,
-      html_url: "https://github.com/rejhaqtonmoy/sports-highlight-automator"
+      html_url: "https://github.com/rejawanul/sports-highlight-automator"
     },
     {
-      name: "portfolio-website",
+      name: "rejawanul.github.io",
       description: "My personal developer + data science portfolio hub featuring a dual timeline and storytelling case studies.",
       language: "JavaScript",
       stargazers_count: 1,
       forks_count: 0,
-      html_url: "https://github.com/rejhaqtonmoy/portfolio-website"
+      html_url: "https://github.com/rejawanul/rejawanul.github.io"
     }
   ];
 
   useEffect(() => {
-    fetch("https://api.github.com/users/rejhaqtonmoy/repos?sort=updated&per_page=10")
+    fetch("https://api.github.com/users/rejawanul/repos?sort=updated&per_page=10")
       .then((res) => {
         if (!res.ok) throw new Error("API rate limited or network failure");
         return res.json();
@@ -66,7 +66,7 @@ export default function GitHubSection() {
           <h2 className="section-title-inline">Featured GitHub Activity</h2>
         </div>
         <a
-          href="https://github.com/rejhaqtonmoy"
+          href="https://github.com/rejawanul"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outline btn-sm github-profile-btn"
@@ -88,7 +88,7 @@ export default function GitHubSection() {
               <div className="repo-header">
                 <BookOpen size={16} className="repo-icon" />
                 <a
-                  href={repo.html_url}
+                  href={repo.name === "RejasStudio" ? "https://www.rejastudio.com" : repo.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="repo-name-link"
@@ -120,8 +120,8 @@ export default function GitHubSection() {
         <div className="github-api-fallback-notice">
           <p>
             Showing static offline cache due to high rate requests. View real-time repositories directly at{" "}
-            <a href="https://github.com/rejhaqtonmoy" target="_blank" rel="noopener noreferrer">
-              github.com/rejhaqtonmoy
+            <a href="https://github.com/rejawanul" target="_blank" rel="noopener noreferrer">
+              github.com/rejawanul
             </a>.
           </p>
         </div>

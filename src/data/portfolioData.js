@@ -4,8 +4,7 @@ export const portfolioData = {
     fullName: "Md Rejawanul Haque (Reja)",
     roles: [
       "Data Annotator & ML Researcher",
-      "Sports Video Editor",
-      "Creative Entrepreneur"
+      "Sports Video Editor"
     ],
     tagline: "I Learn. I Build. I Solve Real-World Problems.",
     intro: "I am a Computer Science graduate, remote data annotator, and sports video editor based in Dhaka, Bangladesh. I run a video-editing agency working with international sports clients, while collaborating with machine learning teams to annotate and prepare computer vision datasets.",
@@ -79,19 +78,6 @@ export const portfolioData = {
       isRealCVWork: true
     },
     {
-      id: "dental-image-annotator",
-      title: "Healthcare AI Dental Pathology Segmenter",
-      category: "Data Science / Medical AI",
-      problem: "Dental health startups needed precise, tooth-by-tooth polygon borders on X-rays to train auto-diagnosis models.",
-      idea: "Manually trace highly accurate polygon boundaries for individual teeth, decay spots, and roots based on clinical guides.",
-      solution: "Labeled dental and orthodontic scans, applying clinical segmentation rules and QA checks to avoid labeling errors.",
-      technologies: ["Labelbox", "Polygon Annotation", "Semantic Segmentation", "Medical Imaging"],
-      result: "Supplied 1,000+ clean labeled images directly used to train diagnostic models, improving detection recall.",
-      github: "",
-      demo: "",
-      isRealCVWork: true
-    },
-    {
       id: "hand-gesture-recognition",
       title: "Hand Movement Action Recognition Dataset",
       category: "Computer Vision / Deep Learning",
@@ -103,19 +89,6 @@ export const portfolioData = {
       github: "",
       demo: "",
       isRealCVWork: true
-    },
-    {
-      id: "video-edit-workflow-automator",
-      title: "Sports Highlight Clip Sorter & Automator",
-      category: "Software & Automation",
-      problem: "Finding the best highlight frames manually in hours of sports footage takes a lot of time.",
-      idea: "Write a script to detect high-intensity action scenes based on motion detection and sound spikes.",
-      solution: "Created a Python utility that parses video frames, finds high-motion clips, and exports chopped files ready for editing.",
-      technologies: ["Python", "OpenCV", "FFmpeg", "Audio Processing"],
-      result: "Saved about 60% of video sorting time, helping deliver final videos much faster.",
-      github: "https://github.com/rejhaqtonmoy/sports-highlight-automator",
-      demo: "",
-      isRealCVWork: false
     },
     {
       id: "sign-language-recognition",
@@ -169,25 +142,13 @@ export const portfolioData = {
       demo: "",
       isRealCVWork: false
     },
-    {
-      id: "personal-portfolio-cv",
-      title: "Developer & Creative Portfolio Hub",
-      category: "Web Development",
-      problem: "Having two different paths (CS/ML and Video Editing) made the profile look split or hard to understand.",
-      idea: "Build a single page showing the link between code and business, using a clean academic style.",
-      solution: "Developed this responsive React site using CSS variables, custom SVGs, and dynamic GitHub integration.",
-      technologies: ["React", "Vite", "Vanilla CSS", "Responsive Design"],
-      result: "Unifies both professional identities in one clean layout that loads in less than 1.5 seconds.",
-      github: "https://github.com/rejhaqtonmoy/portfolio-website",
-      demo: "https://rejhaqtonmoy.github.io",
-      isRealCVWork: true
-    }
+
   ],
 
   // Currently Building Section
   currentlyBuilding: [
     {
-      name: "Video Metadata Annotation Toolkit",
+      name: "Making Plugin for Video Editing Automation",
       description: "A script that turns ML coordinate outputs into Premiere Pro markers for quick editing.",
       status: "Building",
       tech: "Python, FFmpeg, XML parsing"
@@ -203,49 +164,46 @@ export const portfolioData = {
   // Skills Breakdown
   skills: [
     {
-      category: "Computer Vision & ML Research",
+      category: "Programming Languages",
       items: [
-        "Image & Video Annotation",
-        "Object Detection",
-        "Action Recognition",
-        "Dataset QA & Validation",
-        "Independent Research"
+        "Python",
+        "JavaScript (React, Vite)",
+        "HTML / CSS",
+        "Swift",
+        "SQL"
       ]
     },
     {
-      category: "Data Annotation Techniques",
+      category: "ML Models & Frameworks",
       items: [
-        "Bounding Boxes",
-        "Polygon Annotation",
-        "Semantic Segmentation",
-        "Keypoints Labeling",
-        "Human/Object Tracking",
-        "Dental X-Ray Annotation",
-        "Frame-by-Frame Tracking"
+        "TensorFlow",
+        "PyTorch",
+        "YOLOv8",
+        "DeepOCSORT",
+        "OpenCV",
+        "Computer Vision"
       ]
     },
+    {
+      category: "Tools & Technologies",
+      items: [
+        "Git & GitHub",
+        "VS Code / Jupyter",
+        "CVAT",
+        "Labelbox",
+        "FFmpeg",
+        "yt-dlp"
+      ]
+    },
+
     {
       category: "Video Editing & Creative",
       items: [
         "Adobe Premiere Pro",
         "Adobe After Effects",
         "Adobe Photoshop",
-        "Sports Highlights (NBA, UFC, NFL)",
-        "YouTube Docu-style",
-        "Reels & Short-form",
+        "Sports Highlights",
         "Pacing & Storytelling"
-      ]
-    },
-    {
-      category: "Tools & Workflow",
-      items: [
-        "CVAT",
-        "Labelbox",
-        "Git & GitHub",
-        "VS Code",
-        "Client Communication",
-        "Agency Management",
-        "Remote Collaboration"
       ]
     }
   ],

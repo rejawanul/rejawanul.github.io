@@ -137,7 +137,6 @@ export default function Sidebar() {
 
           {/* CV Section */}
           <div className="cv-buttons">
-            <h3 className="cv-section-title">Professional CVs</h3>
             <a
               href={personalInfo.cvFiles.academic}
               download="Rejawanul_Haque_Academic_CV.pdf"
